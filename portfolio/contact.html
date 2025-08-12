@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Basil Biju</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="https://github.com/BasilBiju1217" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a class="brand" href="index.html">Basil<span>Biju</span></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-container contact-layout">
+    <!-- left: form -->
+    <section class="content glass">
+      <h2>Contact Me</h2>
+      <p class="lead">Have a question or opportunity? Send me a message — I usually reply within 1-2 business days.</p>
+
+      <form class="contact-form" action="send_email.php" method="POST">
+        <label for="email">Your Email</label>
+        <input id="email" type="email" name="email" placeholder="yourname@domain.com" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject" placeholder="Short subject" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+    <!-- right: contact details -->
+    <aside class="contact-info glass">
+      <h3>Contact Details</h3>
+
+      <p class="contact-line">
+        <i class="fas fa-phone fa-lg"></i>
+        <span class="contact-label">Phone</span>
+        <a href="tel:+918606487257" class="contact-value">+91 86064 87257</a>
+      </p>
+
+      <p class="contact-line">
+        <i class="fas fa-envelope fa-lg"></i>
+        <span class="contact-label">Email</span>
+        <a href="mailto:basilbiju1217@gmail.com" class="contact-value">basilbiju1217@gmail.com</a>
+      </p>
+
+      <p class="contact-line">
+        <i class="fab fa-linkedin fa-lg"></i>
+        <span class="contact-label">LinkedIn</span>
+        <a href="https://www.linkedin.com/in/basil-biju-28b19721b/" target="_blank" class="contact-value">/in/basil-biju-28b19721b</a>
+      </p>
+
+      <p class="contact-line">
+        <i class="fab fa-github fa-lg"></i>
+        <span class="contact-label">GitHub</span>
+        <a href="https://github.com/BasilBiju1217" target="_blank" class="contact-value">/BasilBiju1217</a>
+      </p>
+
+      <div class="small-note">
+        <strong>Note:</strong> Form replies arrive to my email — please include your contact email so I can respond directly.
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>particlesJS.load('particles-js','js/particles-config.json');</script>
+</body>
+</html>
